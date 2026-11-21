@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover your next destination with SkyWay. Explore routes and plan your next journey.">
+  <meta name="theme-color" content="#071b3a">
+  <title>SkyWay — Your Journey Starts Here</title>
+  <link rel="icon" type="image/png" href="assets/airline-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="SkyWay home">
+      <img src="assets/airline-logo.png" alt="" class="brand-mark">
+      <span>SKY<span>WAY</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#destinations">Destinations</a>
+      <a href="#experience">Our experience</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#booking">Plan a trip</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">FLY BEYOND THE ORDINARY</p>
+        <h1>The world is<br><span>closer than ever.</span></h1>
+        <p class="hero-text">Find inspiration, explore new places and make every journey count. Your next adventure starts with SkyWay.</p>
+        <a class="button button-light" href="#booking">Explore flights <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="dot"></span> A smoother way to discover the world</div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/airline-logo.png" alt="SkyWay airplane emblem" class="hero-logo">
+        <div class="art-caption"><strong>YOUR JOURNEY</strong><span>STARTS HERE</span></div>
+      </div>
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+    </section>
+
+    <section class="booking-wrap" id="booking">
+      <div class="booking-heading">
+        <div><p class="eyebrow">LET'S GET YOU THERE</p><h2>Where would you like to go?</h2></div>
+        <span class="demo-tag">DEMO FLIGHT SEARCH</span>
+      </div>
+      <form class="booking-form" id="flight-form">
+        <label>From<input name="from" type="text" placeholder="Departure city" required></label>
+        <label>To<input name="to" type="text" placeholder="Destination" required></label>
+        <label>Departure<input name="date" type="date" required></label>
+        <label>Passengers<select name="passengers"><option>1 passenger</option><option>2 passengers</option><option>3 passengers</option><option>4 passengers</option></select></label>
+        <button class="button button-blue" type="submit">Search flights <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="form-message" id="form-message" role="status" aria-live="polite">This is a front-end demo. Connect a flight API or booking system to enable real reservations.</p>
+    </section>
+
+    <section class="destinations section" id="destinations">
+      <div class="section-top"><div><p class="eyebrow">FIND YOUR NEXT VIEW</p><h2>Places worth the journey.</h2></div><p>From vibrant cities to peaceful escapes, inspiration is waiting around the world.</p></div>
+      <div class="destination-grid">
+        <article class="destination-card card-bali"><div><span>01 / ISLAND ESCAPE</span><h3>Bali, Indonesia</h3></div></article>
+        <article class="destination-card card-paris"><div><span>02 / CITY BREAK</span><h3>Paris, France</h3></div></article>
+        <article class="destination-card card-tokyo"><div><span>03 / CULTURE & ENERGY</span><h3>Tokyo, Japan</h3></div></article>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="experience-symbol">✦</div>
+      <div><p class="eyebrow">MADE FOR THE WAY YOU TRAVEL</p><h2>More than a destination.<br><span>It's the whole journey.</span></h2></div>
+      <p class="experience-copy">We believe every great trip begins with possibility. SkyWay is a simple starting point for discovering where you could go next.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <a class="brand footer-brand" href="#"><img src="assets/airline-logo.png" alt=""><span>SKY<span>WAY</span></span></a>
+    <p>Go further. See more. Make it yours.</p>
+    <span class="copyright">© <span id="year"></span> SkyWay. Demo website.</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
